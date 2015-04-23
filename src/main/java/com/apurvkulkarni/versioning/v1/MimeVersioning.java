@@ -14,11 +14,11 @@ public class MimeVersioning {
 
 	@RequestMapping(method = RequestMethod.GET, value = "/mimeVersioning", produces = "application/json")
 	public ResponseEntity<String> pathVersioningTest(HttpServletRequest request, HttpServletResponse response) {
-		return new ResponseEntity<>("{\"version\":v1}", HttpStatus.OK);
+		return new ResponseEntity<>("{\"version\":\"v1\"}", HttpStatus.OK);
 	}
 	
 	@RequestMapping(method = RequestMethod.GET, value = "/mimeUnversioned", produces = "application/json")
 	public ResponseEntity<String> unchangedVersionTest(HttpServletRequest request, HttpServletResponse response) {
-		return new ResponseEntity<>("{\"version\":v1}", HttpStatus.OK);
+		return new ResponseEntity<>("{\"version\":\"v1\"}", HttpStatus.OK);
 	}
 }

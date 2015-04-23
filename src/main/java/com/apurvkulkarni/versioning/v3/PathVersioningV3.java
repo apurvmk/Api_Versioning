@@ -15,8 +15,8 @@ import com.apurvkulkarni.versioning.v2.PathVersioningV2;
 @RequestMapping(value="/v3")
 public class PathVersioningV3 extends PathVersioningV2{
 
-	@RequestMapping(method = RequestMethod.GET, value = "/newMethod", produces = "application/json")
+	@RequestMapping(method = RequestMethod.GET, value = "/pathNewMethod", produces = "application/json")
 	public ResponseEntity<String> newMethodTest(HttpServletRequest request, HttpServletResponse response) {
-		return new ResponseEntity<>("{\"version\":v3}", HttpStatus.OK);
+		return new ResponseEntity<>("{\"version\":\"v3\"}", HttpStatus.OK);
 	}
 }

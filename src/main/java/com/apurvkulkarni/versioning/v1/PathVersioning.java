@@ -15,11 +15,11 @@ public class PathVersioning {
 
 	@RequestMapping(method = RequestMethod.GET, value = "/pathVersioning", produces = "application/json")
 	public ResponseEntity<String> pathVersioningTest(HttpServletRequest request, HttpServletResponse response) {
-		return new ResponseEntity<>("{\"version\":v1}", HttpStatus.OK);
+		return new ResponseEntity<>("{\"version\":\"v1\"}", HttpStatus.OK);
 	}
 	
 	@RequestMapping(method = RequestMethod.GET, value = "/pathUnversioned", produces = "application/json")
 	public ResponseEntity<String> unchangedVersionTest(HttpServletRequest request, HttpServletResponse response) {
-		return new ResponseEntity<>("{\"version\":v1}", HttpStatus.OK);
+		return new ResponseEntity<>("{\"version\":\"v1\"}", HttpStatus.OK);
 	}
 }

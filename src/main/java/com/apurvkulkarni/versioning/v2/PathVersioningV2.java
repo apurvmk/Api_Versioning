@@ -17,6 +17,6 @@ public class PathVersioningV2 extends PathVersioning{
 
 	@RequestMapping(method = RequestMethod.GET, value = "/pathVersioning", produces = "application/json")
 	public ResponseEntity<String> pathVersioningTest(HttpServletRequest request, HttpServletResponse response) {
-		return new ResponseEntity<>("{\"version\":v2}", HttpStatus.OK);
+		return new ResponseEntity<>("{\"version\":\"v2\"}", HttpStatus.OK);
 	}
 }

@@ -14,7 +14,7 @@ public class MimeVersioningV3{
 
 	@RequestMapping(method = RequestMethod.GET, value = "/mimeNewMethod", produces = "application/vnd.apurv.v3+json")
 	public ResponseEntity<String> pathVersioningTest(HttpServletRequest request, HttpServletResponse response) {
-		return new ResponseEntity<>("{\"version\":v3}", HttpStatus.OK);
+		return new ResponseEntity<>("{\"version\":\"v3\"}", HttpStatus.OK);
 	}
 	
 }
