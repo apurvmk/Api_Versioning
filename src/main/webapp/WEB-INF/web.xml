@@ -6,10 +6,6 @@
         <param-name>WEBAPPROOTKEY</param-name>
         <param-value>apiversioning</param-value>
     </context-param>
-     <context-param>
-        <param-name>log4jExposeWebAppRoot</param-name>
-        <param-value>false</param-value>
-    </context-param>
 
     <!-- Log4j configuration -->
     <servlet>

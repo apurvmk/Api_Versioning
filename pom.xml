@@ -10,6 +10,7 @@
  
 	<properties>
 		<spring.version>4.0.5.RELEASE</spring.version>
+		<servlet.version>3.1.0</servlet.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -17,6 +18,12 @@
 			<artifactId>junit</artifactId>
 			<version>3.8.1</version>
 			<scope>test</scope>
+		</dependency>
+		<!-- Servlet API -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>${servlet.version}</version>
 		</dependency>
 		<!-- Spring dependencies -->
 		<dependency>

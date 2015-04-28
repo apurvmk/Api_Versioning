@@ -19,6 +19,6 @@ public class MimeVersioning {
 	
 	@RequestMapping(method = RequestMethod.GET, value = "/mimeUnversioned", produces = "application/json")
 	public ResponseEntity<String> unchangedVersionTest(HttpServletRequest request, HttpServletResponse response) {
-		return new ResponseEntity<>("{\"version\":\"v1\"}", HttpStatus.OK);
+		return new ResponseEntity<>("{\"version\":\"unversioned\"}", HttpStatus.OK);
 	}
 }

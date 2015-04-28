@@ -20,6 +20,6 @@ public class PathVersioning {
 	
 	@RequestMapping(method = RequestMethod.GET, value = "/pathUnversioned", produces = "application/json")
 	public ResponseEntity<String> unchangedVersionTest(HttpServletRequest request, HttpServletResponse response) {
-		return new ResponseEntity<>("{\"version\":\"v1\"}", HttpStatus.OK);
+		return new ResponseEntity<>("{\"version\":\"unversioned\"}", HttpStatus.OK);
 	}
 }
